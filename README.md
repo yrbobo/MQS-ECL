@@ -1,10 +1,8 @@
-# 《Medical Question Summarization with Entity-driven Contrastive Learning》
+# Medical Question Summarization with Entity-driven Contrastive Learning
 
 ## Introduction
 
-This is the code repository for paper 《Medical Question Summarization with Entity-driven Contrastive
-Learning》. The repository contains the implementation code of paper 《Medical Question Summarization with Entity-driven Contrastive
-Learning》 and two newly published data sets in the paper.
+This is the code repository for paper "Medical Question Summarization with Entity-driven Contrastive Learning". The repository contains the source code and two new datasets in the paper.
 
 ## Run
 
@@ -56,7 +54,7 @@ python data_deduplicated.py
 
 ### 4. Data preprocessing
 
-For different data sets, use the data processing program we provide to process all data sets into a unified format. The relevant codes are in the 'data_preprocessing' directory.
+For different datasets, use the data processing program we provide to process all datasets into a unified format. The relevant codes are in the 'data_preprocessing' directory.
 
 
 
@@ -98,4 +96,4 @@ You can test the trained model with a command like the following:
 
 
 
-## *We can provide a series of checkpoints for the model in the paper. If you need them, you can contact my email address: sibo.wei@foxmail.com .
+## *We can provide a series of checkpoints for the model in the paper. If you need them, you can contact this email address: sibo.wei@foxmail.com .
