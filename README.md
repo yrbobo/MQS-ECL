@@ -1,34 +1,8 @@
 # Medical Question Summarization with Entity-driven Contrastive Learning
 
-## Introduction
+This is the code repository for the paper "Medical Question Summarization with Entity-driven Contrastive Learning". The repository contains the source code and two revised datasets in the paper.
 
-This is the code repository for paper "Medical Question Summarization with Entity-driven Contrastive Learning". The repository contains the source code and two new datasets in the paper.
-
-## Run
-
-### 1. Download raw datasets
-
-The raw datasets download address of each dataset:
-
-| dataset         | url                                                |
-| --------------- | -------------------------------------------------- |
-| MeQSum          | https://github.com/abachaa/MeQS                    |
-| CHQ-Summ        | https://github.com/shwetanlp/Yahoo-CHQ-S           |
-| iCliniq         | https://github.com/UCSD-AI4H/Medical-Dialogue-Syst |
-| HealthCareMagic | https://github.com/UCSD-AI4H/Medical-Dialogue-Syst |
-
-After the download is complete, please put the dataset in the specified directory of the project.
-
-We also provide iCliniq and HealthCareMagic datasets that have been deduplicated, you can download them here:
-
-| dataset             |                                                              |
-| ------------------- | ------------------------------------------------------------ |
-| iCliniq-new         | https://drive.google.com/drive/u/1/folders/1FQTsgRYDJajcNlKJXG-FFPKFw4Cf4FzU |
-| HealthCareMagic-new | https://drive.google.com/drive/u/1/folders/1Hq4AiYr96jfOsB8OJMlyDRRUhmr_BYvY |
-
-
-
-### 2. Requirements
+## Requirements
 
 Python >= 3.6
 
@@ -40,25 +14,43 @@ py-rouge == 1.1
 
 stanza == 1.5.0
 
+## 1. Prepare the datasets
 
+### (1) Download the original datasets
 
-### 3. Deduplication for iCliniq and HealthCareMagic
+The original datasets can be downloaded from the following URLs.
 
-Please note that if you choose to directly download our processed iCliniq and HealthCareMagic datasets, you can skip this step.
+| Dataset         | URLs                                               |
+| --------------- | -------------------------------------------------- |
+| MeQSum          | https://github.com/abachaa/MeQS                    |
+| CHQ-Summ        | https://github.com/shwetanlp/Yahoo-CHQ-S           |
+| iCliniq         | https://github.com/UCSD-AI4H/Medical-Dialogue-Syst |
+| HealthCareMagic | https://github.com/UCSD-AI4H/Medical-Dialogue-Syst |
+
+After the datasets are downloaded, please put each of them into a specified directory of the project.
+
+### (2) Download the revised datasets
+
+iCliniq and HealthCareMagic datasets suffer from a data leakage problem. For example, the duplicate rate of data samples in the iCliniq datasets reaches 33%, which leads to the overlap of training and test data and makes the evaluation results unreliable. In order to conquer the problem, we check their data samples carefully and removed the repeated ones. The revised datasets can be downloaded from the following URLs.
+
+| Dataset             | URLs                                                         |
+| ------------------- | ------------------------------------------------------------ |
+| iCliniq-new         | https://drive.google.com/drive/u/1/folders/1FQTsgRYDJajcNlKJXG-FFPKFw4Cf4FzU |
+| HealthCareMagic-new | https://drive.google.com/drive/u/1/folders/1Hq4AiYr96jfOsB8OJMlyDRRUhmr_BYvY |
+
+### (3) Remove the repeated samples from iCliniq and HealthCareMagic datasets
 
 ```python
 python data_deduplicated.py
 ```
 
+Note: if you have downloaded the revised datasets in last step, you can skip this one.
 
+### (4) Preprocess datasets into a uniform formation
 
-### 4. Data preprocessing
+For different datasets, we provide the preprocessing code. You can run them to process all datasets into a uniform formation. The relevant codes are in the 'data_preprocessing' directory.
 
-For different datasets, use the data processing program we provide to process all datasets into a unified format. The relevant codes are in the 'data_preprocessing' directory.
-
-
-
-### 5. Generate hard negative samples
+## 2. Generate hard negative samples
 
 You can generate hard negative examples for different datasets with the following command:
 
@@ -71,7 +63,7 @@ python med_ent_perturbation.py --dataset dataset/HealthCareMagic/train.json --ou
 
 
 
-### 6. Train
+## 3. Train
 
 You can train the model with the following command:
 
@@ -84,16 +76,28 @@ python run.py --do_train_contrast --output_dir models/HealthCareMagic --learning
 
 
 
-### 7. Test
+## 4. Test
 
 You can test the trained model with a command like the following:
 
 ```
- python run.py --mod test --model_path models/test/model.pt --dataset MeQSum
+ python run.py --mod test --model_path models/test/model_name.pt --dataset MeQSum
 ```
 
 
 
+## Acknowledgement
 
+If this work is useful in your research, please cite our paper.
 
-## *We can provide a series of checkpoints for the model in the paper. If you need them, you can contact this email address: sibo.wei@foxmail.com .
+```
+@article{wei2023ECl,
+  title={Medical Question Summarization with Entity-driven Contrastive
+Learning },
+  author={Sibo Wei, Wenpeng Lu, Xueping Peng, Shoujin Wang, Yi-Fei Wang, Weiyu Zhang},
+  journal={},
+  year={2023}
+}
+```
+
+## **We would like to provide a series of checkpoints for the model in this paper. If you need them, you can contact us with the email:** [**sibo.wei@foxmail.com**](mailto:sibo.wei@foxmail.com)
