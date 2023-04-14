@@ -31,7 +31,7 @@ After the datasets are downloaded, please put each of them into a specified dire
 
 ### (2) Download the revised datasets
 
-iCliniq and HealthCareMagic datasets suffer from a data leakage problem. For example, the duplicate rate of data samples in the iCliniq datasets reaches 33%, which leads to the overlap of training and test data and makes the evaluation results unreliable. In order to conquer the problem, we check their data samples carefully and removed the repeated ones. The revised datasets can be downloaded from the following URLs.
+iCliniq and HealthCareMagic datasets suffer from a data leakage problem. For example, the duplicate rate of data samples in the iCliniq datasets reaches 33%, which leads to the overlap of training and test data, and makes the evaluation results unreliable. In order to conquer the problem, we check their data samples carefully and remove the repeated ones. The revised datasets can be downloaded from the following URLs.
 
 | Dataset             | URLs                                                         |
 | ------------------- | ------------------------------------------------------------ |
@@ -48,7 +48,7 @@ Note: if you have downloaded the revised datasets in last step, you can skip thi
 
 ### (4) Preprocess datasets into a uniform formation
 
-For different datasets, we provide the preprocessing code. You can run them to process all datasets into a uniform formation. The relevant codes are in the 'data_preprocessing' directory.
+For different datasets, we provide the preprocessing code. You can run them to process all datasets into a uniform formation. The relevant codes are in the "data_preprocessing" directory.
 
 ## 2. Generate hard negative samples
 
