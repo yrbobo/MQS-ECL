@@ -33,10 +33,10 @@ After the datasets are downloaded, please put each of them into a specified dire
 
 iCliniq and HealthCareMagic datasets suffer from a data leakage problem. For example, the duplicate rate of data samples in the iCliniq datasets reaches 33%, which leads to the overlap of training and test data, and makes the evaluation results unreliable. In order to conquer the problem, we check their data samples carefully and remove the repeated ones. The revised datasets can be downloaded from the following URLs.
 
-| Dataset             | URLs                                                         |
-| ------------------- | ------------------------------------------------------------ |
-| iCliniq-new         | https://drive.google.com/drive/u/1/folders/1FQTsgRYDJajcNlKJXG-FFPKFw4Cf4FzU |
-| HealthCareMagic-new | https://drive.google.com/drive/u/1/folders/1Hq4AiYr96jfOsB8OJMlyDRRUhmr_BYvY |
+| Dataset                 | URLs                                                         |
+| ----------------------- | ------------------------------------------------------------ |
+| iCliniq-revised         | https://drive.google.com/drive/u/1/folders/1FQTsgRYDJajcNlKJXG-FFPKFw4Cf4FzU |
+| HealthCareMagic-revised | https://drive.google.com/drive/u/1/folders/1Hq4AiYr96jfOsB8OJMlyDRRUhmr_BYvY |
 
 ### (3) Remove the repeated samples from iCliniq and HealthCareMagic datasets
 
@@ -91,9 +91,8 @@ You can test the trained model with a command like the following:
 If this work is useful in your research, please cite our paper.
 
 ```
-@article{wei2023ECl,
-  title={Medical Question Summarization with Entity-driven Contrastive
-Learning },
+@article{wei2023ECL,
+  title={Medical Question Summarization with Entity-driven Contrastive Learning },
   author={Sibo Wei, Wenpeng Lu, Xueping Peng, Shoujin Wang, Yi-Fei Wang, Weiyu Zhang},
   journal={},
   year={2023}
