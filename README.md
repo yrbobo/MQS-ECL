@@ -92,7 +92,7 @@ If this work is useful in your research, please cite our paper.
 
 ```
 @article{wei2023ECL,
-  title={Medical Question Summarization with Entity-driven Contrastive Learning },
+  title={Medical Question Summarization with Entity-driven Contrastive Learning},
   author={Sibo Wei, Wenpeng Lu, Xueping Peng, Shoujin Wang, Yi-Fei Wang, Weiyu Zhang},
   journal={},
   year={2023}
