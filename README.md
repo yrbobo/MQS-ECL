@@ -20,12 +20,12 @@ stanza == 1.5.0
 
 The original datasets can be downloaded from the following URLs.
 
-| Dataset         | URLs                                               |
-| --------------- | -------------------------------------------------- |
-| MeQSum          | https://github.com/abachaa/MeQS                    |
-| CHQ-Summ        | https://github.com/shwetanlp/Yahoo-CHQ-S           |
-| iCliniq         | https://github.com/UCSD-AI4H/Medical-Dialogue-Syst |
-| HealthCareMagic | https://github.com/UCSD-AI4H/Medical-Dialogue-Syst |
+| Dataset         | URLs                                                 |
+| --------------- |------------------------------------------------------|
+| MeQSum          | https://github.com/abachaa/MeQSum                    |
+| CHQ-Summ        | https://github.com/shwetanlp/Yahoo-CHQ-Summ          |
+| iCliniq         | https://github.com/UCSD-AI4H/Medical-Dialogue-System |
+| HealthCareMagic | https://github.com/UCSD-AI4H/Medical-Dialogue-System |
 
 After the datasets are downloaded, please put each of them into a specified directory of the project.
 
