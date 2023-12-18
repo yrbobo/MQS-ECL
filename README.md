@@ -99,4 +99,6 @@ If this work is useful in your research, please cite our paper.
 }
 ```
 
-## **We would like to provide a series of checkpoints for the model in this paper. If you need them, you can contact us with the email:** [**sibo.wei@foxmail.com**](mailto:sibo.wei@foxmail.com)
+## Checkpoints
+We have uploaded the model checkpoints to HuggingFace:
+https://huggingface.co/youren1999/MQS-ECL
