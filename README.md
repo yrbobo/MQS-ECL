@@ -91,11 +91,13 @@ You can test the trained model with a command like the following:
 If this work is useful in your research, please cite our paper.
 
 ```
-@article{wei2023ECL,
+@article{wei2023medical,
   title={Medical Question Summarization with Entity-driven Contrastive Learning},
-  author={Sibo Wei, Wenpeng Lu, Xueping Peng, Shoujin Wang, Yi-Fei Wang, Weiyu Zhang},
-  journal={arXiv preprint arXiv:2304.07437},
-  year={2023}
+  author={Lu, Wenpeng  and Wei, Sibo and Peng, Xueping and Wang, Yi-Fei and Naseem, Usman and Wang, Shoujin},
+  journal={ACM Transactions on Asian and Low-Resource Language Information Processing},
+  volume={},
+  pages={},
+  year={2024},
 }
 ```
 
