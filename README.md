@@ -1,6 +1,6 @@
 # Medical Question Summarization with Entity-driven Contrastive Learning
 
-This is the code repository for the paper "Medical Question Summarization with Entity-driven Contrastive Learning". The repository contains the source code and two revised datasets in the paper.
+This is the code repository for the paper "Medical Question Summarization with Entity-driven Contrastive Learning", which is accepted by ACM Transactions on Asian and Low-Resource Language Information Processing.
 
 ## Requirements
 
@@ -95,9 +95,10 @@ If this work is useful in your research, please cite our paper.
   title={Medical Question Summarization with Entity-driven Contrastive Learning},
   author={Lu, Wenpeng  and Wei, Sibo and Peng, Xueping and Wang, Yi-Fei and Naseem, Usman and Wang, Shoujin},
   journal={ACM Transactions on Asian and Low-Resource Language Information Processing},
-  volume={},
-  pages={},
-  year={2024},
+  volume={23},
+  number={4},
+  pages={56:1-56:19},
+  year={2024}
 }
 ```
 
